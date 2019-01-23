@@ -1,4 +1,8 @@
 if(room == rm_game){
+	
+	if(audio_is_paused(msc_song)){
+		audio_stop_sound(msc_song);
+	}
 	audio_play_sound(msc_song, 2, true);
 	repeat(6){
 		var xx = choose(
